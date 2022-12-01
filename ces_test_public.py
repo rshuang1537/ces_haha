@@ -279,8 +279,8 @@ gb.configure_side_bar()
 gb.configure_default_column(groupable=True, value=True, enableRowGroup=True, aggFunc="sum", editable=True)
 gb.configure_selection(selection_mode="single") #, use_checkbox=True
 
-# for col in df_base.columns.values.tolist():
-#     gb.configure_column(col, suppressMovable=True, suppressMenu=True)
+for col in df_base.columns.values.tolist():
+    gb.configure_column(col, suppressMovable=True, suppressMenu=True)
 gridOptions = gb.build()
 ces_list = AgGrid(df_base, 
                 gridOptions=gridOptions, 
