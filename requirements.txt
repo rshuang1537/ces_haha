@@ -7,4 +7,3 @@ streamlit_plotly_events
 Pillow
 requests
 datetime 
-warnings
