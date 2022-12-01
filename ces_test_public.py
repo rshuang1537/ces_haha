@@ -286,7 +286,7 @@ ces_list = AgGrid(df_base,
                 gridOptions=gridOptions, 
                 enable_enterprise_modules=True, 
                 allow_unsafe_jscode=True,
-                height=400,
+                height=600,
                 theme='balham', #'balham','alpine','material','',''
                 update_mode=GridUpdateMode.SELECTION_CHANGED)
 
