@@ -5,7 +5,6 @@ streamlit-aggrid
 plotly
 streamlit_plotly_events
 Pillow
-itertools
 requests
 io
 datetime 
