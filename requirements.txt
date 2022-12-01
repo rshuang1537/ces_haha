@@ -6,6 +6,5 @@ plotly
 streamlit_plotly_events
 Pillow
 requests
-io
 datetime 
 warnings
