@@ -1,7 +1,7 @@
 numpy
 pandas
 streamlit
-st_aggrid
+streamlit-aggrid
 plotly
 streamlit_plotly_events
 PIL
