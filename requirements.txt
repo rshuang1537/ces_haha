@@ -1,6 +1,5 @@
 numpy
 pandas
-json
 streamlit
 st_aggrid
 plotly
