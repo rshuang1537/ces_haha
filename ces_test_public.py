@@ -273,7 +273,7 @@ st.plotly_chart(ces_distribution)
 
 
 gb = GridOptionsBuilder.from_dataframe(df_base)
-gb.configure_column('CLP_ID', pinned='left')
+#gb.configure_column('CLP_ID', pinned='left')
 gb.configure_pagination()
 gb.configure_side_bar()
 gb.configure_default_column(groupable=True, value=True, enableRowGroup=True, aggFunc="sum", editable=True)
