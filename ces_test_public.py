@@ -241,7 +241,7 @@ def fig_ces2(df = df_base, var = 'Score_PR'):
                         title = f'Engagement Score 2.0 : {var} ( {score_avg} avg )', 
                         autosize=True, 
                         width=1500, 
-                        height=700)
+                        height=900)
 
     fig_a.update_traces(#overwrite=True, 
                         #marker_color = c1_conv.view,
