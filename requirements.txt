@@ -4,7 +4,7 @@ streamlit
 streamlit-aggrid
 plotly
 streamlit_plotly_events
-PIL
+Pillow
 itertools
 requests
 io
