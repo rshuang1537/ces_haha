@@ -1,0 +1,12 @@
+numpy
+pandas
+json
+streamlit
+st_aggrid
+plotly
+streamlit_plotly_events
+PIL
+itertools
+requests
+io
+datetime 
