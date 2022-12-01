@@ -273,15 +273,21 @@ st.plotly_chart(ces_distribution)
 
 
 gb = GridOptionsBuilder.from_dataframe(df_base)
+gb.configure_column('CLP_ID', pinned='left')
 gb.configure_pagination()
 gb.configure_side_bar()
 gb.configure_default_column(groupable=True, value=True, enableRowGroup=True, aggFunc="sum", editable=True)
 gb.configure_selection(selection_mode="single") #, use_checkbox=True
+
+# for col in df_base.columns.values.tolist():
+#     gb.configure_column(col, suppressMovable=True, suppressMenu=True)
 gridOptions = gb.build()
 ces_list = AgGrid(df_base, 
                 gridOptions=gridOptions, 
                 enable_enterprise_modules=True, 
-                allow_unsafe_jscode=True, 
+                allow_unsafe_jscode=True,
+                height=2000,
+                theme='streamlit', 
                 update_mode=GridUpdateMode.SELECTION_CHANGED)
 
 
