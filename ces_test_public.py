@@ -240,7 +240,7 @@ def fig_ces2(df = df_base, var = 'Score_PR'):
                         #legend_traceorder='reversed',
                         title = f'Engagement Score 2.0 : {var} ( {score_avg} avg )', 
                         autosize=True, 
-                        width=1500, 
+                        width=1200, 
                         height=900)
 
     fig_a.update_traces(#overwrite=True, 
@@ -287,7 +287,7 @@ ces_list = AgGrid(df_base,
                 enable_enterprise_modules=True, 
                 allow_unsafe_jscode=True,
                 height=400,
-                theme='streamlit', 
+                theme='dark', 
                 update_mode=GridUpdateMode.SELECTION_CHANGED)
 
 
