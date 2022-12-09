@@ -25,12 +25,12 @@ warnings.filterwarnings('ignore')
 
 st.set_page_config(layout="wide")
 
-db = 'VisionOne'
+# db = 'VisionOne'
 
 
-def get_image(path, title):  
-    image = Image.open(path)
-    st.image(image, caption=title, use_column_width=True)
+# def get_image(path, title):  
+#     image = Image.open(path)
+#     st.image(image, caption=title, use_column_width=True)
 
 # onboard_flow = get_image(r'/Users/greenrmp/Documents/screenshot/onboard_flow.png', 'flow')
 # onboard_logic = get_image(r'/Users/greenrmp/Documents/screenshot/onboard_logic_haha.png', 'logic')
@@ -93,7 +93,7 @@ def get_image(path, title):
 
 
 
-h = f"""
+h = """
 <!DOCTYPE html>
 <html lang="en">
   <head>
