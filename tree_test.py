@@ -28,14 +28,6 @@ st.set_page_config(layout="wide")
 # db = 'VisionOne'
 
 
-# def get_image(path, title):  
-#     image = Image.open(path)
-#     st.image(image, caption=title, use_column_width=True)
-
-# onboard_flow = get_image(r'/Users/greenrmp/Documents/screenshot/onboard_flow.png', 'flow')
-# onboard_logic = get_image(r'/Users/greenrmp/Documents/screenshot/onboard_logic_haha.png', 'logic')
-#status_pic = get_image(r'/Users/alan_huang/Documents/trendmicro/DS_C1WS_Migration/migration_status_demo_new.png', 'Migration Demo')
-
 # @st.experimental_memo(suppress_st_warning=True)
 # def query_adx(db, query):
     
@@ -55,39 +47,6 @@ st.set_page_config(layout="wide")
 #                                                                                 authority_id)
 #     client = KustoClient(kcsb)
 #     response = client.execute(db, query)
-#     df = dataframe_from_result_table(response.primary_results[0])
-#     return df
-
-# @st.experimental_memo(suppress_st_warning=True)
-# def query_adx_huge(db, query, records = 15371537, size = 1537153715):
-#     '''
-#     Query ADX and return to dataframe.
-#     Overrides the default maximum number of records and default maximum data size a query is allowed to return to
-#     '''
-#     with open(r'/Users/alan_huang/auth/kusto_auth.json', 'r') as f:
-#         file = json.load(f)  
-#     cluster = file['cluster']
-#     client_id = file['client_id']
-#     authority_id = file['authority_id']
-
-#     with open(r'/Users/alan_huang/auth/kusto_secret.json', 'r') as f:
-#         file = json.load(f)  
-#     client_secret = file['client_secret']
-
-#     kcsb = KustoConnectionStringBuilder.with_aad_application_key_authentication(cluster, 
-#                                                                                 client_id, 
-#                                                                                 client_secret, 
-#                                                                                 authority_id)
-#     properties_huge = ClientRequestProperties()
-#     properties_huge.set_option(properties_huge.results_defer_partial_query_failures_option_name, True)
-#     properties_huge.set_option(properties_huge.request_timeout_option_name, timedelta(seconds=30 * 60))
-#     properties_huge.set_option("truncationmaxrecords", records)
-#     properties_huge.set_option("truncationmaxsize", size) #1.5G 啦
-#     #properties_huge.set_option("notruncation", True) # 大絕最後出 
-
-#     client = KustoClient(kcsb)
-    
-#     response = client.execute(db, query, properties=properties_huge)
 #     df = dataframe_from_result_table(response.primary_results[0])
 #     return df
 
